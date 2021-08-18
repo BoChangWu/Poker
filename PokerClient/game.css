@@ -1,0 +1,203 @@
+body {
+    background-color: #fff;
+}
+
+.host {
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hcard {
+    width: 100px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.pot {
+    width: 1200px;
+    height: 800px;
+    margin: auto;
+    background-color: #337ab7;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 15%);
+}
+
+.pname {
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pcards {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    width: 500px;
+    height: 100%;
+    flex: 2;
+    text-align: center;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.pid {
+    background-color: #77b9ef;
+    color: #102638;
+    border-radius: 5px;
+}
+
+.hostact {
+    width: 1200px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #337ab7;
+    border: 1px dashed #102638;
+}
+
+.title {
+    color: #102638;
+    background-color: #77b9ef;
+    text-align: center;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 15%);
+}
+
+.htitle {
+    color: #102638;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ptitle {
+    border-bottom: 1px solid #102638;
+    color: #102638;
+    padding: 5px;
+    text-align: center;
+}
+
+.money {
+    width: 100%;
+    font-size: 18px;
+    height: 30px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #102638;
+}
+
+.potmoney {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #102638;
+}
+
+.urMove {
+    margin-top: 10px;
+}
+
+.usrbtn {
+    margin: 2px;
+}
+
+.chips {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.choose {
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    background-color: #77b9ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #102638;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.cool {
+    margin: 10px;
+}
+
+.navbb {
+    width: 70%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    width: 120px;
+    height: 50px;
+    /* border: 1px solid #102638; */
+    margin: 15px;
+    margin-top: 25px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #337ab7;
+}
+
+  .btn:hover {
+        background-color: #102638;
+        color: #fff;
+        transform: translate(-3px,-3px);
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 15%);
+  }
+
+img {
+    margin: 5px;
+}

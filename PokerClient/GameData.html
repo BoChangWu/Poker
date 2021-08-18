@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PlayerProfile</title>
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div style="width: 800px;padding:25px;margin: 0 auto;">
+        <h2>查看賽局</h2>
+        <button onclick="getRecord()">SHOW</button>
+        <div id="playrecord"></div>
+            
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script>
+        function getRecord() {
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:3300/record/games"
+            }).done(function (games) {
+                //alert(JSON.stringify(players));
+                var tb = "";
+                tb += "<table class='table table-striped table-hover'>";
+                tb += "<thead>";
+                tb += "<tr>";
+                tb += "<td>GameNo.</td>";
+                tb += "<td>Date</td>";
+                tb += "<td>Pot</td>";
+                tb += "<td>Players</td>";
+                tb += "<td>Preflop</td>";
+                tb += "<td>Flop</td>";
+                tb += "<td>Turn</td>";
+                tb += "<td>River</td>";
+                tb += "</tr>";
+                tb += "</thead>";
+                tb += "<tbody>";
+                tb += "<tr>";
+                $.each(games, function (index, game) {
+                    tb += "<tr>";
+                    tb += "<td>" + game.gameId + "</td>"
+                    tb += "<td>" + game.gDate + "</td>"
+                    tb += "<td>" + game.pot + "</td>"
+                    tb += "<td>" + game.players + "</td>"
+                    tb += "<td>" + game.preflop + "</td>"
+                    tb += "<td>" + game.flop + "</td>"
+                    tb += "<td>" + game.turn + "</td>"
+                    tb += "<td>" + game.river + "</td>"
+                    tb += "</tr>";
+                })
+                tb += "</tbody>";
+                $('#playerrecord').html(tb);
+            }).fail(function (err) {
+                alert(err.statusText);
+            });
+        };
+    </script>
+</body>
+</html>
